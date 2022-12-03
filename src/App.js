@@ -19,15 +19,15 @@ function App() {
 
   function times(e) {
     // Add the code for the plus function
-  //   e.preventDefault(); 
-  //   setResult((result) => result * Number(inputRef.current.value));
-  // };
+    e.preventDefault(); 
+    setResult((result) => result * Number(inputRef.current.value));
+  };
 
   function divide(e) {
     // Add the code for the divide function 
-  //   e.preventDefault();
-  //   setResult((result) => result / Number(inputRef.current.value));
-  // };
+    e.preventDefault();
+    setResult((result) => result / Number(inputRef.current.value));
+  };
 
   function resetInput(e) {
   //   e.preventDefault();
