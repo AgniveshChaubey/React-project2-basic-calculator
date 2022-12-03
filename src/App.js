@@ -31,15 +31,15 @@ function App() {
 
   function resetInput(e) {
   //   e.preventDefault();
-  //   // Add the code for the resetInput function 
-  //   inputRef= null;
-  // };
+    // Add the code for the resetInput function 
+    inputRef= null;
+  };
 
   function resetResult(e) {
   //   e.preventDefault();
-  //   // Add the code for the resetResult function 
-  //   setResult(0);
-  // };
+    // Add the code for the resetResult function 
+    setResult(0);
+  };
 
   return (
     <div className="App">
