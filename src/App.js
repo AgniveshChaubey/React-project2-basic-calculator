@@ -19,7 +19,7 @@ function App() {
 
   function times(e) {
     // Add the code for the plus function
-    e.preventDefault(); 
+    e.preventDefault();
     setResult((result) => result * Number(inputRef.current.value));
   };
 
@@ -30,41 +30,41 @@ function App() {
   };
 
   function resetInput(e) {
-  //   e.preventDefault();
+      e.preventDefault();
     // Add the code for the resetInput function 
-    inputRef= null;
+    inputRef.current.value = null;
   };
 
   function resetResult(e) {
-  //   e.preventDefault();
-    // Add the code for the resetResult function 
-    setResult(0);
-  };
+      e.preventDefault();
+      // Add the code for the resetResult function 
+      setResult(0);
+    };
 
-  return (
-    <div className="App">
-      <div>
-        <h1>Simplest Working Calculator</h1>
+    return (
+      <div className="App">
+        <div>
+          <h1>Simplest Working Calculator</h1>
+        </div>
+        <form>
+          <p ref={resultRef}>
+            {result}
+          </p>
+          <input
+            pattern="[0-9]"
+            ref={inputRef}
+            type="number"
+            placeholder="Type a number"
+          />
+          <button onClick={plus}>Add</button>
+          <button onClick={minus}>Subtract</button>
+          <button onClick={times}>Multiply</button>
+          <button onClick={divide}>Divide</button>
+          <button onClick={resetInput}>Reset input</button>
+          <button onClick={resetResult}>Reset result</button>
+        </form>
       </div>
-      <form>
-        <p ref={resultRef}>
-          {result}
-        </p>
-        <input
-          pattern="[0-9]"
-          ref={inputRef}
-          type="number"
-          placeholder="Type a number"
-        />
-        <button onClick={plus}>Add</button>
-        <button onClick={minus}>Subtract</button>
-        <button onClick={times}>Multiply</button>
-        <button onClick={divide}>Divide</button>
-        <button onClick={resetInput}>Reset input</button>
-        <button onClick={resetResult}>Reset result</button>
-      </form>
-    </div>
-  );
+    );
 }
 
-export default App; 
+export default App;
