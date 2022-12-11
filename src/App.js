@@ -60,8 +60,8 @@ function App() {
           <button className="btn btn-outline-success" onClick={minus}>Subtract</button>
           <button className="btn btn-outline-success" onClick={times}>Multiply</button>
           <button className="btn btn-outline-success" onClick={divide}>Divide</button>
-          <button className="btn btn-outline-success" onClick={resetInput}>Reset input</button>
-          <button className="btn btn-outline-success" onClick={resetResult}>Reset result</button>
+          <button className="btn btn-outline-danger" onClick={resetInput}>Reset input</button>
+          <button className="btn btn-outline-danger" onClick={resetResult}>Reset result</button>
         </form>
       </div>
     );
