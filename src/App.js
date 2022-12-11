@@ -42,7 +42,7 @@ function App() {
     };
 
     return (
-      <div className="App">
+      <div className="App container">
         <div>
           <h1>Simplest Working Calculator</h1>
         </div>
@@ -56,12 +56,12 @@ function App() {
             type="number"
             placeholder="Type a number"
           />
-          <button onClick={plus}>Add</button>
-          <button onClick={minus}>Subtract</button>
-          <button onClick={times}>Multiply</button>
-          <button onClick={divide}>Divide</button>
-          <button onClick={resetInput}>Reset input</button>
-          <button onClick={resetResult}>Reset result</button>
+          <button className="btn btn-outline-success" onClick={plus}>Add</button>
+          <button className="btn btn-outline-success" onClick={minus}>Subtract</button>
+          <button className="btn btn-outline-success" onClick={times}>Multiply</button>
+          <button className="btn btn-outline-success" onClick={divide}>Divide</button>
+          <button className="btn btn-outline-success" onClick={resetInput}>Reset input</button>
+          <button className="btn btn-outline-success" onClick={resetResult}>Reset result</button>
         </form>
       </div>
     );
